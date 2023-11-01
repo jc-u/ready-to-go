@@ -1,0 +1,100 @@
+header {
+	display: flex;
+	align-items: center;
+	height: 193px;
+	border-bottom: solid 1px #e5e5e5;
+}
+
+header img {
+	margin-left: 10%;
+}
+
+header h1 {
+	margin-left: 40px;
+	font-size: 48px;
+}
+
+.container {
+	height: 77vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.container > div {
+	width: 60%;
+}
+
+.switch {
+	display: flex;
+}
+
+.switch-on,
+.switch-off {
+	width: 120px;
+	height: 70px;
+	border-radius: 6px;
+	border: solid 1px #908f8f;
+	color: #5c48d3;
+	margin: 20px;
+}
+
+.switch .switch-on,
+.switch-off p {
+	text-align: center;
+	line-height: 70px;
+}
+
+.active {
+	background-color: #5c48d3;
+	color: #fff;
+}
+
+.disabled {
+	background-color: #d34848;
+}
+
+button {
+	width: 130px;
+	height: 145px;
+	border-radius: 6px;
+	border: solid 1px #908f8f;
+	background-color: #46ac4a;
+	font-size: 38px;
+	color: white;
+	font-family: "Montserrat", sans-serif;
+}
+
+.reset-btn button {
+	height: 60%;
+	background-color: #5c48d3;
+}
+
+footer p {
+	text-align: center;
+	font-size: 15px;
+}
+
+footer a {
+	color: black;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+@media (min-width: 768px) {
+	.container > div {
+		width: 40%;
+	}
+
+	button {
+		width: 250px;
+		font-size: 48px;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container > div {
+		width: 50%;
+	}
+}
